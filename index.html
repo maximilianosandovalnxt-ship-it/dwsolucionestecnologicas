@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DW Soluciones Tecnológicas</title>
+<style>
+  :root {
+    --primary: #0a2540;
+    --accent: #2563eb;
+    --light: #f5f8fb;
+    --text: #1e293b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: var(--text); line-height: 1.6; }
+  header {
+    background: var(--primary);
+    color: #fff;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  header .logo { font-size: 1.3rem; font-weight: 700; }
+  header .logo span { color: var(--accent); }
+  nav a { color: #fff; text-decoration: none; margin-left: 1.5rem; font-size: 0.95rem; }
+  nav a:hover { color: var(--accent); }
+  .hero {
+    background: linear-gradient(135deg, var(--primary), #123a63);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  .hero h1 { font-size: 2.4rem; margin-bottom: 1rem; }
+  .hero p { font-size: 1.1rem; max-width: 640px; margin: 0 auto 2rem; opacity: 0.9; }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  section { padding: 4rem 2rem; max-width: 1000px; margin: 0 auto; }
+  h2 { font-size: 1.8rem; color: var(--primary); margin-bottom: 2rem; text-align: center; }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+  .card {
+    background: var(--light);
+    padding: 1.8rem;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+  }
+  .card h3 { color: var(--accent); margin-bottom: 0.6rem; font-size: 1.1rem; }
+  .about p { max-width: 750px; margin: 0 auto; text-align: center; }
+  .contact { background: var(--light); }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .contact-grid div strong { display: block; color: var(--primary); margin-bottom: 0.3rem; }
+  footer {
+    background: var(--primary);
+    color: #cbd5e1;
+    text-align: center;
+    padding: 1.8rem 2rem;
+    font-size: 0.9rem;
+  }
+  footer a { color: #93c5fd; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">DW <span>Soluciones Tecnológicas</span></div>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>DW Soluciones Tecnológicas</h1>
+  <p>Impulsamos la transformación digital de tu negocio con soluciones tecnológicas a medida, soporte confiable y desarrollo de software de calidad.</p>
+  <a href="#contacto" class="btn">Contáctanos</a>
+</section>
+
+<section id="servicios">
+  <h2>Nuestros Servicios</h2>
+  <div class="services-grid">
+    <div class="card">
+      <h3>Desarrollo Web</h3>
+      <p>Sitios y aplicaciones web modernas, responsivas y optimizadas para tu negocio.</p>
+    </div>
+    <div class="card">
+      <h3>Desarrollo de Software</h3>
+      <p>Soluciones a medida para automatizar y optimizar tus procesos internos.</p>
+    </div>
+    <div class="card">
+      <h3>Consultoría IT</h3>
+      <p>Asesoramiento tecnológico estratégico para el crecimiento de tu empresa.</p>
+    </div>
+    <div class="card">
+      <h3>Soporte Técnico</h3>
+      <p>Mantenimiento y soporte continuo para tus sistemas y plataformas.</p>
+    </div>
+  </div>
+</section>
+
+<section id="nosotros" class="about">
+  <h2>Sobre Nosotros</h2>
+  <p>DW Soluciones Tecnológicas es una empresa dedicada a brindar servicios tecnológicos integrales, ayudando a negocios de todos los tamaños a digitalizarse y crecer a través de soluciones eficientes, seguras y adaptadas a sus necesidades.</p>
+</section>
+
+<section id="contacto" class="contact">
+  <h2>Contacto</h2>
+  <div class="contact-grid">
+    <div>
+      <strong>Razón social</strong>
+      DW Soluciones Tecnológicas SRL
+    </div>
+    <div>
+      <strong>Email</strong>
+      contacto@dwsolucionestecnologicas.com
+    </div>
+    <div>
+      <strong>Teléfono</strong>
+      +54 11 3221 9874
+    </div>
+    <div>
+      <strong>Dirección</strong>
+      Rondeau 2858<br>Ciudad de Buenos Aires, C1262<br>Argentina
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 DW Soluciones Tecnológicas SRL. Todos los derechos reservados.</p>
+  <p>Rondeau 2858, Ciudad Autónoma de Buenos Aires, C1262, Argentina &middot; +54 11 3221 9874</p>
+  <p><a href="politica-de-privacidad.html">Política de Privacidad</a></p>
+</footer>
+
+</body>
+</html>
